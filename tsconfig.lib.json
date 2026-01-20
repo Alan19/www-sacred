@@ -8,5 +8,10 @@
     "noEmit": false,
     "types": ["node", "vite/client"]
   },
-  "include": ["src/index.ts", "src/components", "src/common", "src/modules"]
+  "include": [
+    "index.ts",
+    "components",
+    "common",
+    "modules"
+  ]
 }

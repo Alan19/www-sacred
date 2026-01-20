@@ -8,19 +8,19 @@ export default defineConfig({
   resolve: {
     alias: {
       "@root": path.resolve(__dirname, "./"),
-      "@system": path.resolve(__dirname, "./src/system"),
-      "@demos": path.resolve(__dirname, "./src/demos"),
-      "@common": path.resolve(__dirname, "./src/common"),
-      "@data": path.resolve(__dirname, "./src/data"),
-      "@components": path.resolve(__dirname, "./src/components"),
-      "@pages": path.resolve(__dirname, "./src/pages"),
-      "@modules": path.resolve(__dirname, "./src/modules"),
+      "@system": path.resolve(__dirname, "./system"),
+      "@demos": path.resolve(__dirname, "./demos"),
+      "@common": path.resolve(__dirname, "./common"),
+      "@data": path.resolve(__dirname, "./data"),
+      "@components": path.resolve(__dirname, "./components"),
+      "@pages": path.resolve(__dirname, "./pages"),
+      "@modules": path.resolve(__dirname, "./modules"),
     },
   },
   build: {
     emptyOutDir: true,
     lib: {
-      entry: path.resolve(__dirname, 'src/index.ts'),
+      entry: path.resolve(__dirname, './index.ts'),
       name: 'SRCL',
       formats: ['es', 'umd'],
       fileName: (format) => `srcl.${format}.js`,

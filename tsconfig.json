@@ -24,13 +24,13 @@
     "baseUrl": ".",
     "paths": {
       "@root/*": ["./*"],
-      "@system/*": ["./src/system/*"],
-      "@demos/*": ["./src/demos/*"],
-      "@common/*": ["./src/common/*"],
-      "@data/*": ["./src/data/*"],
-      "@components/*": ["./src/components/*"],
-      "@pages/*": ["./src/pages/*"],
-      "@modules/*": ["./src/modules/*"]
+      "@system/*": ["./system/*"],
+      "@demos/*": ["./demos/*"],
+      "@common/*": ["./common/*"],
+      "@data/*": ["./data/*"],
+      "@components/*": ["./components/*"],
+      "@pages/*": ["./pages/*"],
+      "@modules/*": ["./modules/*"]
     }
   },
   "files": [],
