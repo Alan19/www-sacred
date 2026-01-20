@@ -22,3 +22,13 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+.next
+.nova
+.env
+.env.local
+.env-custom-development
+.env-development
+.env-textile
+.env-production
+yarn.lock
