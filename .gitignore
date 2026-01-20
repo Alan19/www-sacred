@@ -32,3 +32,4 @@ dist-ssr
 .env-textile
 .env-production
 yarn.lock
+bun.lock
