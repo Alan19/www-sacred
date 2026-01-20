@@ -4,8 +4,65 @@
 
 SRCL is an open-source React component and style repository that helps you build web applications, desktop applications, and static websites with terminal aesthetics. Its modular, easy-to-use components emphasize precise monospace character spacing and line heights, enabling you to quickly copy and paste implementations while maintaining a clean, efficient codebase.
 
-```sh
-npm install
+## Installation
+
+```bash
+npm install srcl
+```
+
+## Usage
+
+### Importing Components
+
+You can import components directly from the package:
+
+```tsx
+import { Button, Card, Input, Providers } from 'srcl';
+
+// Import base styles
+import 'srcl/style.css';
+
+// Optional: Import global styles and fonts
+import 'srcl/global.css';
+import 'srcl/global-fonts.css';
+
+const MyComponent = () => (
+  <Providers>
+    <Card>
+      <Input placeholder="Type something..." />
+      <Button theme="PRIMARY">Submit</Button>
+    </Card>
+  </Providers>
+);
+```
+
+### CSS Requirements
+
+Make sure to import the CSS file in your main entry point (e.g., `main.tsx` or `_app.tsx`):
+
+```tsx
+import 'srcl/style.css';
+
+// Recommended for full terminal aesthetics:
+import 'srcl/global.css';
+import 'srcl/global-fonts.css';
+```
+
+## Development
+
+### Building the library
+
+To build the library for distribution:
+
+```bash
+npm run build
+```
+
+This will generate the `dist` folder containing the compiled ESM and UMD bundles, as well as the TypeScript declaration files and the bundled CSS.
+
+### Running the dev environment
+
+```bash
 npm run dev
 ```
 

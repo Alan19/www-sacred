@@ -4,14 +4,34 @@
   "version": "1.1.19",
   "type": "module",
   "license": "MIT",
+  "main": "./dist/srcl.umd.js",
+  "module": "./dist/srcl.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/srcl.es.js",
+      "require": "./dist/srcl.umd.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./global.css": "./global.css",
+    "./global-fonts.css": "./global-fonts.css",
+    "./style.css": "./dist/srcl.css"
+  },
+  "files": [
+    "dist",
+    "global.css",
+    "global-fonts.css"
+  ],
   "scripts": {
     "dev": "next -p 10000",
-    "build": "tsc -b && vite build",
+    "build": "vite build && tsc -p tsconfig.lib.json",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
-    "next": "^16.1.4",
+    "next": "^16.1.4"
+  },
+  "peerDependencies": {
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },

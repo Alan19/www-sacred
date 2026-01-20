@@ -17,4 +17,25 @@ export default defineConfig({
       "@modules": path.resolve(__dirname, "./src/modules"),
     },
   },
+  build: {
+    emptyOutDir: true,
+    lib: {
+      entry: path.resolve(__dirname, 'src/index.ts'),
+      name: 'SRCL',
+      formats: ['es', 'umd'],
+      fileName: (format) => `srcl.${format}.js`,
+    },
+    rolldownOptions: {
+      external: ['react', 'react-dom', 'next', 'react/jsx-runtime', 'react/jsx-dev-runtime'],
+      output: {
+        globals: {
+          react: 'React',
+          'react-dom': 'ReactDOM',
+          'next': 'Next',
+          'react/jsx-runtime': 'jsxRuntime',
+          'react/jsx-dev-runtime': 'jsxDevRuntime',
+        },
+      },
+    },
+  },
 })
