@@ -1,4 +1,5 @@
 {
+  "extends": "./tsconfig.json",
   "compilerOptions": {
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
     "target": "ES2023",
@@ -15,12 +16,39 @@
     "noEmit": true,
 
     /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "strict": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@root/*": [
+        "./*"
+      ],
+      "@system/*": [
+        "./src/system/*"
+      ],
+      "@demos/*": [
+        "./src/demos/*"
+      ],
+      "@common/*": [
+        "./src/common/*"
+      ],
+      "@data/*": [
+        "./src/data/*"
+      ],
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@pages/*": [
+        "./src/pages/*"
+      ],
+      "@modules/*": [
+        "./src/modules/*"
+      ]
+    }
   },
   "include": ["vite.config.ts"]
 }

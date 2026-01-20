@@ -2,8 +2,11 @@
 // Vendored from
 // https://github.com/JohannesKlauss/react-hotkeys-hook/blob/main/src/useHotkeys.ts
 
-import { HotkeyCallback, Keys, Options, OptionsOrDependencyArray, RefType } from '@modules/hotkeys/types'
-import { DependencyList, RefCallback, useCallback, useEffect, useState, useLayoutEffect, useRef } from 'react'
+// NOTE(jimmylee)
+// Vendored from
+// https://github.com/JohannesKlauss/react-hotkeys-hook/blob/main/src/useHotkeys.ts
+import type { HotkeyCallback, Keys, Options, OptionsOrDependencyArray, RefType } from '@modules/hotkeys/types';
+import { type DependencyList, type RefCallback, useCallback, useEffect, useState, useLayoutEffect, useRef } from 'react'
 import { mapKey, parseHotkey, parseKeysHookInput } from '@modules/hotkeys/parse-hotkeys'
 import {
   isHotkeyEnabled,

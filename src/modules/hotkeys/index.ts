@@ -14,7 +14,10 @@ export {
   useHotkeysContext,
   isHotkeyPressed,
   HotkeysProvider,
-  Options,
-  Keys,
-  HotkeyCallback,
 }
+export type {
+    Options,
+    Keys,
+    HotkeyCallback
+}
+

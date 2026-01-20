@@ -3,35 +3,5 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ],
-  "compilerOptions": {
-    "traceResolution": true,
-    "baseUrl": "src",
-    "paths": {
-      "@root/*": [
-        "./*"
-      ],
-      "@system/*": [
-        "./system/*"
-      ],
-      "@demos/*": [
-        "./demos/*"
-      ],
-      "@common/*": [
-        "./common/*"
-      ],
-      "@data/*": [
-        "./data/*"
-      ],
-      "@components/*": [
-        "./components/*"
-      ],
-      "@pages/*": [
-        "./pages/*"
-      ],
-      "@modules/*": [
-        "./modules/*"
-      ]
-    }
-  }
+  ]
 }

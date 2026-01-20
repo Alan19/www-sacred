@@ -1,8 +1,8 @@
 // NOTE(jimmylee)
 // Vendored from
 // https://github.com/JohannesKlauss/react-hotkeys-hook/blob/main/src/HotkeysProvider.tsx
-import { Hotkey } from '@modules/hotkeys/types'
-import { createContext, ReactNode, useState, useContext, useCallback } from 'react'
+import type { Hotkey } from '@modules/hotkeys/types';
+import { createContext, type ReactNode, useState, useContext, useCallback } from 'react'
 import BoundHotkeysProxyProviderProvider from '@modules/hotkeys/bound-hotkeys-proxy-provider'
 
 import * as Utilities from '@common/utilities';
