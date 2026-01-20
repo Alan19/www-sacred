@@ -1,22 +1,11 @@
 {
-  "extends": "./tsconfig.app.json",
+  "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./dist",
     "declaration": true,
     "declarationDir": "./dist",
     "emitDeclarationOnly": true,
     "noEmit": false,
-    "baseUrl": ".",
-    "paths": {
-      "@root/*": ["./*"],
-      "@system/*": ["./src/system/*"],
-      "@demos/*": ["./src/demos/*"],
-      "@common/*": ["./src/common/*"],
-      "@data/*": ["./src/data/*"],
-      "@components/*": ["./src/components/*"],
-      "@pages/*": ["./src/pages/*"],
-      "@modules/*": ["./src/modules/*"]
-    },
     "types": ["node", "vite/client"]
   },
   "include": ["src/index.ts", "src/components", "src/common", "src/modules"]

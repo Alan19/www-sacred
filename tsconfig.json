@@ -1,36 +1,41 @@
 {
+  "compilerOptions": {
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@root/*": ["./*"],
+      "@system/*": ["./src/system/*"],
+      "@demos/*": ["./src/demos/*"],
+      "@common/*": ["./src/common/*"],
+      "@data/*": ["./src/data/*"],
+      "@components/*": ["./src/components/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@modules/*": ["./src/modules/*"]
+    }
+  },
   "files": [],
   "references": [
     {"path": "./tsconfig.app.json"},
     {"path": "./tsconfig.node.json"}
-  ],
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@root/*": [
-        "./*"
-      ],
-      "@system/*": [
-        "./src/system/*"
-      ],
-      "@demos/*": [
-        "./src/demos/*"
-      ],
-      "@common/*": [
-        "./src/common/*"
-      ],
-      "@data/*": [
-        "./src/data/*"
-      ],
-      "@components/*": [
-        "./src/components/*"
-      ],
-      "@pages/*": [
-        "./src/pages/*"
-      ],
-      "@modules/*": [
-        "./src/modules/*"
-      ]
-    }
-  }
+  ]
 }
