@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useRef } from 'react';
 import styles from './DOMSnake.module.css';
-import ActionButton from './ActionButton';
+import ActionButton from './ActionButton.tsx';
 
 interface SnakeGameProps {
   width?: number;
