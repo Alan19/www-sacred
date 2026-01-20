@@ -33,7 +33,7 @@ const DataTable: React.FC<TableProps> = ({ data }) => {
   const prevDataRef = React.useRef<string[][]>(data);
 
   React.useEffect(() => {
-    const rows = tableRef.current?.querySelectorAll<HTMLTableRowElement>('tr') || [];
+    const rows = (tableRef.current?.querySelectorAll<HTMLTableRowElement>('tr') || []) as NodeListOf<HTMLTableRowElement>;
     for (let i = 1; i < data.length; i++) {
       const cells = rows[i]?.querySelectorAll<HTMLTableCellElement>('td');
       if (!cells) continue;
