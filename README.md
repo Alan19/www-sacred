@@ -6,11 +6,31 @@ SRCL is an open-source React component and style repository that helps you build
 
 ## Installation
 
-```bash
-npm install srcl
+```sh
+npm install
+npm run dev
 ```
 
-## Usage
+Go to `http://localhost:10000` in your browser of choice.
+
+We use [Vercel](https://vercel.com/home) for hosting.
+
+### Scripts (Optional)
+
+If you need to run node script without running the server, use this example to get started
+
+```sh
+npm run script example
+```
+
+### Contact
+
+If you have questions ping me on Twitter, [@wwwjim](https://www.twitter.com/wwwjim). Or you can ping [@internetxstudio](https://x.com/internetxstudio).
+
+## NPM Package Installation
+```sh
+npm install srcl
+```
 
 ### Importing Components
 
@@ -42,14 +62,9 @@ Make sure to import the CSS file in your main entry point (e.g., `main.tsx` or `
 
 ```tsx
 import 'srcl/style.css';
-
-// Recommended for full terminal aesthetics:
 import 'srcl/global.css';
 import 'srcl/global-fonts.css';
 ```
-
-## Development
-
 ### Building the library
 
 To build the library for distribution:
@@ -59,25 +74,3 @@ npm run build
 ```
 
 This will generate the `dist` folder containing the compiled ESM and UMD bundles, as well as the TypeScript declaration files and the bundled CSS.
-
-### Running the dev environment
-
-```bash
-npm run dev
-```
-
-Go to `http://localhost:10000` in your browser of choice.
-
-We use [Vercel](https://vercel.com/home) for hosting.
-
-### Scripts (Optional)
-
-If you need to run node script without running the server, use this example to get started
-
-```sh
-npm run script example
-```
-
-### Contact
-
-If you have questions ping me on Twitter, [@wwwjim](https://www.twitter.com/wwwjim). Or you can ping [@internetxstudio](https://x.com/internetxstudio).
