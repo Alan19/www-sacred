@@ -26,8 +26,9 @@
   ],
   "scripts": {
     "dev": "next -p 10000",
-    "build": "vite build && tsc -p tsconfig.lib.json",
-    "lint": "eslint .",
+    "build": "next build",
+    "dist": "vite build && tsc -p tsconfig.lib.json",
+    "lint": "next lint",
     "preview": "vite preview"
   },
   "dependencies": {
