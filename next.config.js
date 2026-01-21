@@ -2,4 +2,4 @@ const nextConfig = {
   devIndicators: false
 }
  
-module.exports = nextConfig
+export default nextConfig;
