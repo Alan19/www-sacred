@@ -1,8 +1,18 @@
 {
   "compilerOptions": {
+    "paths": {
+      "@root/*": ["./*"],
+      "@system/*": ["./system/*"],
+      "@demos/*": ["./demos/*"],
+      "@common/*": ["./common/*"],
+      "@data/*": ["./data/*"],
+      "@components/*": ["./components/*"],
+      "@pages/*": ["./pages/*"],
+      "@modules/*": ["./modules/*"]
+    },
     "target": "ES2022",
-    "useDefineForClassFields": true,
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "useDefineForClassFields": true,
     "module": "ESNext",
     "skipLibCheck": true,
 
@@ -20,18 +30,7 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
-
-    "baseUrl": ".",
-    "paths": {
-      "@root/*": ["./*"],
-      "@system/*": ["./system/*"],
-      "@demos/*": ["./demos/*"],
-      "@common/*": ["./common/*"],
-      "@data/*": ["./data/*"],
-      "@components/*": ["./components/*"],
-      "@pages/*": ["./pages/*"],
-      "@modules/*": ["./modules/*"]
-    }
+    "baseUrl": "."
   },
   "files": [],
   "references": [
